@@ -1,0 +1,34 @@
+name: resume
+version: 0.0.1
+description: fp language
+maintainer: Joona Piirainen <joona.piirainen@gmail.com>
+github: japiirainen/resume
+
+ghc-options:
+  - -Wall
+
+default-extensions:
+  - TypeApplications
+  - OverloadedStrings
+  - LambdaCase
+  - PartialTypeSignatures
+  - UnicodeSyntax
+  - DerivingStrategies
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - TeX
+    - Resume
+    - ResumeData
+  dependencies:
+    - base
+    - mtl
+
+executable:
+  source-dirs: app
+  main: Main.hs
+  dependencies:
+    - base
+    - mtl
+    - resume

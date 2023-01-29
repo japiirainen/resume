@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'resume.blg'
+[84] biber-darwin:340> INFO - === Sun Jan 29, 2023, 17:19:11
+[97] Biber.pm:418> INFO - Reading 'resume.bcf'
+[187] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
+[199] bbl.pm:654> INFO - Writing 'resume.bbl' with encoding 'UTF-8'
+[199] bbl.pm:757> INFO - Output to resume.bbl
+[200] Biber.pm:130> WARN - The file 'resume.bcf' does not contain any citations!
+[200] Biber.pm:132> INFO - WARNINGS: 1

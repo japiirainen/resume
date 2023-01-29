@@ -1,0 +1,59 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:          resume
+version:       0.0.1
+description:   fp language
+homepage:      https://github.com/japiirainen/resume#readme
+bug-reports:   https://github.com/japiirainen/resume/issues
+maintainer:    Joona Piirainen <joona.piirainen@gmail.com>
+build-type:    Simple
+
+source-repository head
+  type: git
+  location: https://github.com/japiirainen/resume
+
+library
+  exposed-modules:
+      TeX
+      Resume
+      ResumeData
+  other-modules:
+      Paths_resume
+  hs-source-dirs:
+      src
+  default-extensions:
+      TypeApplications
+      OverloadedStrings
+      LambdaCase
+      PartialTypeSignatures
+      UnicodeSyntax
+      DerivingStrategies
+  ghc-options: -Wall
+  build-depends:
+      base
+    , mtl
+  default-language: Haskell2010
+
+executable resume
+  main-is: Main.hs
+  other-modules:
+      Paths_resume
+  hs-source-dirs:
+      app
+  default-extensions:
+      TypeApplications
+      OverloadedStrings
+      LambdaCase
+      PartialTypeSignatures
+      UnicodeSyntax
+      DerivingStrategies
+  ghc-options: -Wall
+  build-depends:
+      base
+    , mtl
+    , resume
+  default-language: Haskell2010
