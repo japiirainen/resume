@@ -86,6 +86,7 @@ aoc =
         [ en "\\item I have participated in \\underline{\\href{https://adventofcode.com/}{Advent of Code}} since 2021."
         , en "\\item Solutions are written in various programming languages."
         , en "\\item 2015 \\underline{\\href{https://github.com/japiirainen/aoc-2015}{solutions}}. (\\texttt{Clojure})"
+        , en "\\item 2020 \\underline{\\href{https://github.com/japiirainen/aoc-2020}{solutions}}. (\\texttt{Python})"
         , en "\\item 2021 \\underline{\\href{https://github.com/japiirainen/aoc-2021}{solutions}}. (\\texttt{Haskell} and \\texttt{Python})"
         , en "\\item 2022 \\underline{\\href{https://github.com/japiirainen/aoc-2022}{solutions}}. (\\texttt{Haskell})"
         ]

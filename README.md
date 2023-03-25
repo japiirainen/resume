@@ -6,15 +6,8 @@ To build this resume, install texlive-full and a Haskell toolchain (GHC with Cab
 Then:
 
 ```bash
-# Generate the TeX files
-runghc Main.hs en >> latex/resume.tex
-runghc Main.hs elab >> latex/resume-elab.tex
-
-# Build the TeX files
-cd latex
-make
-cp *.pdf ..
-cd ..
+# update resume
+./update.sh
 ```
 
 # Download
