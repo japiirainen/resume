@@ -25,7 +25,7 @@ reaktor =
           pure (en "\\textbf{Reaktor}, Helsinki, Finland")
     , paragraph $ pure (en "\\role{Software Engineering}{Software Developer}")
     , itemize
-        [ en "\\item Worked at multiple client organizations solving difficult problems in the domain web development."
+        [ en "\\item Worked at multiple client organizations solving difficult problems. Mostly in the domain of web development."
         , en "\\item Was involved in both senior and junior recruitment. Conducted both technical and non-technical interviews."
         , en "\\item Worked with a variety of technologies, such as \\texttt{React}, \\texttt{TypeScript}, \\texttt{Node.js}, \\texttt{Clojure}, \\texttt{ClojureScript}, \\texttt{PostgreSQL} and \\texttt{AWS}."
         , en "\\item Took part in the development of the company's internal tools."
@@ -84,8 +84,8 @@ aoc =
             )
     , itemize
         [ en "\\item I have participated in \\underline{\\href{https://adventofcode.com/}{Advent of Code}} since 2021."
-        , en "\\item Solutions are written in various programming languages."
         , en "\\item 2015 \\underline{\\href{https://github.com/japiirainen/aoc-2015}{solutions}}. (\\texttt{Clojure})"
+        , en "\\item 2016 (WIP) \\underline{\\href{https://github.com/japiirainen/aoc-2016}{solutions}}. All days in different languages."
         , en "\\item 2020 \\underline{\\href{https://github.com/japiirainen/aoc-2020}{solutions}}. (\\texttt{Python})"
         , en "\\item 2021 \\underline{\\href{https://github.com/japiirainen/aoc-2021}{solutions}}. (\\texttt{Haskell} and \\texttt{Python})"
         , en "\\item 2022 \\underline{\\href{https://github.com/japiirainen/aoc-2022}{solutions}}. (\\texttt{Haskell})"
@@ -95,12 +95,11 @@ aoc =
 compiler ∷ Resume
 compiler =
   paragraph
-    [ itemTeX "Compiler"
-    , en $ "understand various program representations such as " ++ repre ++ ", etc."
-    , elab "Familiar with most parser generators, understand layout syntax parsing."
+    [ itemTeX "Compilers"
+    , en "Experience with parser generators, parser combinators and layout-sensitive syntax parsing."
+    , en "Familiar with multiple evaluation strategies such as normalization by evaluation (NBE) and abstract machines such as CEK and CESK machines."
     ]
   where
-    repre = "CFG, ANF, (P)HOAS"
 
 programmingLanguages ∷ Resume
 programmingLanguages =
@@ -148,8 +147,8 @@ typeTheory ∷ Resume
 typeTheory =
   paragraph
     [ itemTeX "Type Theory"
-    , en "Understanding of Martin-L\\\"{o}f type theory, Homotopy Type Theory, and Cubical Type Theory"
-    , en "familiar with \\texttt{Idris}, \\texttt{Agda} and \\texttt{Coq}"
+    , en "Understanding of Martin-L\\\"{o}f type theory and Homotopy Type Theory."
+    , en "Familiar with \\texttt{Idris}, \\texttt{Agda} and \\texttt{Lean4}"
     ]
 
 cicd ∷ Resume
