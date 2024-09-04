@@ -6,9 +6,8 @@ basicInfo ∷ Resume
 basicInfo =
   paragraph
     [ pure "\\basicInfo{"
-    , pure $ "\\email{joona.piirainen@gmail.com}" ++ period
-    , -- , cn $ "\\phone{(+86) 180-8192-5082}" ++ period
-      -- , en $ "\\phone{(1) 717-728-6526}" ++ period
+    , pure $ "\\email{japiirainen@proton.me}" ++ period
+    , -- , pure $ "\\phone{+348405482488}" ++ period
       pure $ "\\github[japiirainen]{https://github.com/japiirainen}" ++ period
     , pure $ "\\homepage[japiirainen.xyz]{https://japiirainen.xyz}" ++ period
     , pure "\\linkedin[Joona Piirainen]{https://www.linkedin.com/in/joona-piirainen-a026351a8/}"
@@ -17,21 +16,38 @@ basicInfo =
   where
     period = "~$\\circ$~"
 
+adalyon ∷ Resume
+adalyon =
+  paragraph
+    [ datedSection2 (date "2024" "01" ~~ date "-" "-") $
+        paragraph $
+          pure (en "\\textbf{Adalyon}, Helsinki, Finland")
+    , paragraph $ pure (en "\\role{Software Engineering}{Software Developer}")
+    , itemize
+        [ en "\\item Part of a team building a behavioural analytics platform from the ground up."
+        , en "\\item Combined different maching learning techniques to accurately measure team dynamics."
+        , en "\\item Worked accross the whole technology stack, including e.g. data engineering, web development and iOS development."
+        , en "\\item Worked with technologies such as \\texttt{pytorch}, \\texttt{coreml}, \\texttt{python}, \\texttt{fastapi}, \\texttt{Microsoft Azure}, \\texttt{swift}, \\texttt{c++} and \\texttt{typescript}."
+        ]
+    ]
+
 reaktor ∷ Resume
 reaktor =
   paragraph
-    [ datedSection2 (date "2021" "05" ~~ date "-" "-") $
+    [ datedSection2 (date "2021" "05" ~~ date "2024" "01") $
         paragraph $
           pure (en "\\textbf{Reaktor}, Helsinki, Finland")
     , paragraph $ pure (en "\\role{Software Engineering}{Software Developer}")
     , itemize
-        [ en "\\item Worked at multiple client organizations solving difficult problems. Mostly in the domain of web development."
-        , en "\\item Was involved in both senior and junior recruitment. Conducted both technical and non-technical interviews."
-        , en "\\item Worked with a variety of technologies, such as \\texttt{React}, \\texttt{TypeScript}, \\texttt{Node.js}, \\texttt{Clojure}, \\texttt{ClojureScript}, \\texttt{PostgreSQL} and \\texttt{AWS}."
-        , en "\\item Took part in the development of the company's internal tools."
-        , en "\\item Attended internal and external trainings, such as \\texttt{Certified Scrum Master} and \\texttt{Consulting 101}."
+        [ en "\\item Collaborated with numerous clients to resolve business-critical technical issues."
+        , en $ "\\item Extensive experience helping critical software projects succeed in the " ++ defsec ++ " domain."
+        , en "\\item Part of both junior and senior recruitment teams. Conducted both technical and non-technical interviews."
+        , en "\\item Worked with a variety of technologies, such as \\texttt{React}, \\texttt{TypeScript}, \\texttt{Node.js}, \\texttt{Clojure}, \\texttt{Java}, \\texttt{ClojureScript}, \\texttt{PostgreSQL} and \\texttt{AWS}."
+        , en "\\item Got to take part in many trainings, such as \\texttt{Cyber Security}, \\texttt{Certified Scrum Master} and \\texttt{Consulting 101}."
         ]
     ]
+  where
+    defsec = href "https://www.reaktor.com/services/industries/defense-and-security" "Defence and Security"
 
 puheet ∷ Resume
 puheet =
@@ -41,8 +57,8 @@ puheet =
           pure (en "\\textbf{Puheet.com}, Espoo, Finland")
     , paragraph $ pure (en "\\role{Software Engineering}{Software Developer}")
     , itemize
-        [ en "\\item Was responsible for the business critical platform components, such as the main backend system and multiple web frontend applications."
-        , en "\\item Worked with a variety of technologies, such as \\texttt{React}, \\texttt{Vue}, \\texttt{TypeScript}, \\texttt{PHP}, \\texttt{Node.js}, \\texttt{MySQL}, \\texttt{ElasticSearch} \\texttt{Linux} and \\texttt{AWS}"
+        [ en "\\item Was responsible for business critical platform components, such as the main backend system and multiple web frontend applications."
+        , en "\\item Worked with a variety of technologies, such as \\texttt{React}, \\texttt{Vue}, \\texttt{TypeScript}, \\texttt{PHP}, \\texttt{Node.js}, \\texttt{MySQL}, \\texttt{ElasticSearch} \\texttt{Linux} and \\texttt{AWS}."
         ]
     ]
 
@@ -69,28 +85,25 @@ vl =
             ( en "Shell scripting in \\texttt{TypeScript}."
             )
     , itemize
-        [ en "\\item \\texttt{vl} is a tool for writing shell scripts in \\texttt{TypeScript}."
-        , en "\\item It is powered by \\underline{\\href{https://deno.land/}{deno}}."
+        [ en "\\item \\texttt{vl} is a tool for writing shell scripts in \\texttt{TypeScript}. It is powered by \\underline{\\href{https://deno.land/}{deno}}."
         ]
     ]
 
 aoc ∷ Resume
 aoc =
   paragraph
-    [ datedSection (github "japiirainen/aoc-2022") (bold "Advent of Code") $
+    [ datedSection (github "japiirainen/aoc-2023") (bold "aoc") $
         paragraph $
           pure
-            ( en "Solutions to \\underline{\\href{https://adventofcode.com/}{Advent of Code}}."
+            ( en "Solutions to \\underline{\\href{https://adventofcode.com/}{Advent of Code}} problems in many programming languages."
             )
     , itemize
-        [ en "\\item I have participated in \\underline{\\href{https://adventofcode.com/}{Advent of Code}} since 2021."
-        , en "\\item 2015 \\underline{\\href{https://github.com/japiirainen/aoc-2015}{solutions}}. (\\texttt{Clojure})"
-        , en "\\item 2016 \\underline{\\href{https://github.com/japiirainen/aoc-2016}{solutions}}. Solutions in 25 different programming languages."
-        , en "\\item 2020 \\underline{\\href{https://github.com/japiirainen/aoc-2020}{solutions}}. (\\texttt{Python})"
-        , en "\\item 2021 \\underline{\\href{https://github.com/japiirainen/aoc-2021}{solutions}}. (\\texttt{Haskell} and \\texttt{Python})"
-        , en "\\item 2022 \\underline{\\href{https://github.com/japiirainen/aoc-2022}{solutions}}. (\\texttt{Haskell})"
+        [ en $ "\\item " ++ year 2015 ++ ", " ++ year 2016 ++ ", " ++ year 2020 ++ ", " ++ year 2021 ++ ", " ++ year 2022 ++ ", " ++ year 2023 ++ "."
         ]
     ]
+  where
+    year ∷ Int → String
+    year n = "\\underline{\\href{https://github.com/japiirainen/aoc-" ++ show n ++ "}{" ++ show n ++ "}}"
 
 compiler ∷ Resume
 compiler =
@@ -99,7 +112,6 @@ compiler =
     , en "Experience with parser generators, parser combinators and layout-sensitive syntax parsing."
     , en "Familiar with multiple evaluation strategies such as normalization by evaluation (NBE) and abstract machines such as CEK and CESK machines."
     ]
-  where
 
 programmingLanguages ∷ Resume
 programmingLanguages =
@@ -110,72 +122,57 @@ programmingLanguages =
     , en $ "comfortable with " ++ somehow ++ " (in random order)."
     ]
   where
-    somehow = "\\texttt{Rust}, \\texttt{C}, \\texttt{Python}, \\texttt{Ocaml} and \\texttt{Agda}"
-    very = "\\texttt{TypeScript}, \\texttt{Clojure}, \\texttt{Haskell} and \\texttt{C\\#}"
+    somehow = "\\texttt{Rust}, \\texttt{C}, \\texttt{C++}, \\texttt{Java} and \\texttt{Ocaml}"
+    very = "\\texttt{TypeScript}, \\texttt{Clojure}, \\texttt{Haskell}, \\texttt{Python} and \\texttt{C\\#}"
 
 webFrameworks ∷ Resume
 webFrameworks =
   paragraph
-    [ itemTeX "Web Frameworks"
-    , en $ "Very experienced in " ++ very ++ ","
-    , en $ "comfortable with " ++ somehow ++ " (in random order)."
+    [ itemTeX "Web Technologies"
+    , en $ "Extensive experienced working with " ++ very ++ "."
     ]
   where
-    somehow = "\\texttt{dotnet} and \\texttt{FastAPI}"
-    very = "\\texttt{React}, \\texttt{Next.js}, \\texttt{Servant} and \\texttt{Express.js}"
+    very = "\\texttt{React}, \\texttt{Next.js}, \\texttt{FastAPI}, \\texttt{dotnet}, \\texttt{Express.js}."
 
-databases ∷ Resume
-databases =
+paradigms ∷ Resume
+paradigms =
   paragraph
-    [ itemTeX "Databases"
-    , en $ "High degree of experience in " ++ very ++ ","
-    , en $ "comfortable with " ++ somehow ++ " (in random order)."
-    ]
-  where
-    somehow = "\\texttt{MySQL} and \\texttt{MongoDB}"
-    very = "\\texttt{PostgreSQL}, \\texttt{Datomic} and \\texttt{ElasticSearch}"
-
-functionalProgramming ∷ Resume
-functionalProgramming =
-  paragraph
-    [ itemTeX "Functional Programming"
-    , en "Extensive experience in functional programming. "
-    , en "Understanding of both the theory and practical applications of functional programming."
+    [ itemTeX "Programming Paradigms"
+    , en "Deep understanding of ins and outs of different programming paradigms, such as functional, object oriented, logic and array programming."
+    , en "Understand that different paradigms fit different problems, and that there are no silver bullets."
     ]
 
-typeTheory ∷ Resume
-typeTheory =
+practices ∷ Resume
+practices =
   paragraph
-    [ itemTeX "Type Theory"
-    , en "Understanding of Martin-L\\\"{o}f type theory and Homotopy Type Theory."
-    , en "Familiar with \\texttt{Idris}, \\texttt{Agda} and \\texttt{Lean4}"
+    [ itemTeX "Programming Practices"
+    , en "I value in high quality software and I always strive to find better ways to deliver it faster and more reliably.."
     ]
 
-cicd ∷ Resume
-cicd =
+cloud ∷ Resume
+cloud =
   paragraph
-    [ itemTeX "CI/CD"
-    , en "Understanding of the importance of CI/CD in software development and quite a bit of experience in using and developing these systems."
-    , en "Familiar with \\texttt{GitLab CI}, \\texttt{GitHub Actions}."
+    [ itemTeX "Cloud Technologies"
+    , en "Extensive experience with clouds techologies such as \\texttt{Microsoft Azure} and \\texttt{AWS}."
+    , en "Experience with developing and maintaining infrastructure pipelines using the \\texttt{Infrastructure as Code} methodology."
     ]
 
 wow ∷ Resume
 wow =
   paragraph
     [ itemTeX "Ways Of Working"
-    , en "Skilled in Agile methodologies and can help teams thrive and make projects succeed."
+    , en "Love helping teams thrive and make projects succeed. Extensive experience of facilitating activities such as retros and project kickoffs."
     ]
 
 skills ∷ Resume
 skills =
   section "Skills" . pure $
     itemize
-      [ programmingLanguages
+      [ wow
+      , programmingLanguages
       , webFrameworks
-      , databases
-      , functionalProgramming
+      , paradigms
+      , cloud
+      , practices
       , compiler
-      , typeTheory
-      , cicd
-      , wow
       ]

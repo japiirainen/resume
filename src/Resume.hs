@@ -18,7 +18,8 @@ resume =
     , basicInfo
     , section
         "Job Experience"
-        [ reaktor
+        [ adalyon
+        , reaktor
         , puheet
         ]
     , skills
@@ -30,15 +31,9 @@ resume =
         ]
     , section
         "Miscellaneous"
-        [ let
-            codewars = href "https://www.codewars.com/" "CodeWars"
-            leetcode = href "https://www.leetcode.com/" "LeetCode"
-           in
-            itemize
-              [ en $ "\\item I love solving coding problems, I'm quite active in " ++ leetcode ++ " and " ++ codewars
-              , en "\\item I never studied math in school, but later in life I've become quite interested in it. Lately I've been studying \\texttt{Number Theory} and \\texttt{Category Theory}."
-              , en "\\item I'm a former professional athlete. I know what it takes to be great at something and am willing to put in the work to get there."
-              ]
+        [ itemize
+            [ en "\\item As a hobby I like to do rock climbing, solve programming puzzles and study mathematics. Lately I've been studying Algebraic Geometry and specifically it's computational aspects."
+            ]
         ]
     , -- end document
       pure "\\end{document}"
