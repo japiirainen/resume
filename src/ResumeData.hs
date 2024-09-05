@@ -25,9 +25,9 @@ adalyon =
     , paragraph $ pure (en "\\role{Software Engineering}{Software Developer}")
     , itemize
         [ en "\\item Part of a team building a behavioural analytics platform from the ground up."
-        , en "\\item Combined different maching learning techniques to accurately measure team dynamics."
-        , en "\\item Worked accross the whole technology stack, including e.g. data engineering, web development and iOS development."
-        , en "\\item Worked with technologies such as \\texttt{pytorch}, \\texttt{coreml}, \\texttt{python}, \\texttt{fastapi}, \\texttt{Microsoft Azure}, \\texttt{swift}, \\texttt{c++} and \\texttt{typescript}."
+        , en "\\item Combined different maching learning techniques to accurately assess team dynamics."
+        , en "\\item Worked across the entire technology stack, including data engineering, web development, and iOS development."
+        , en "\\item Worked with technologies such as \\texttt{PyTorch}, \\texttt{CoreML}, \\texttt{Python}, \\texttt{FastAPI}, \\texttt{Microsoft Azure}, \\texttt{Swift}, \\texttt{C++} and \\texttt{TypeScript}."
         ]
     ]
 
@@ -57,7 +57,7 @@ puheet =
           pure (en "\\textbf{Puheet.com}, Espoo, Finland")
     , paragraph $ pure (en "\\role{Software Engineering}{Software Developer}")
     , itemize
-        [ en "\\item Was responsible for business critical platform components, such as the main backend system and multiple web frontend applications."
+        [ en "\\item Responsible for business critical platform components, such as the main backend system and multiple web frontend applications."
         , en "\\item Worked with a variety of technologies, such as \\texttt{React}, \\texttt{Vue}, \\texttt{TypeScript}, \\texttt{PHP}, \\texttt{Node.js}, \\texttt{MySQL}, \\texttt{ElasticSearch} \\texttt{Linux} and \\texttt{AWS}."
         ]
     ]
@@ -68,11 +68,11 @@ fp =
     [ datedSection (github "japiirainen/fp") (bold "fp") $
         paragraph $
           pure
-            ( en "A small, weird and unpractical programming language."
+            ( en "A small, weird and unpractical \\texttt{programming language}."
             )
     , itemize
-        [ en "\\item \\texttt{fp} is a programming language heavily inspired by the language John Backus described in his 1977 Turing Award lecture."
-        , en "\\item based on a \\underline{\\href{https://dl.acm.org/doi/10.1145/359576.359579}{paper}} by John Backus."
+        [ en "\\item \\texttt{fp} is an unconventional programming language inspired by a \\underline{\\href{https://dl.acm.org/doi/10.1145/359576.359579}{paper}} by John Backus. John Backus described the language in his 1977 Turing Award lecture."
+        , en "\\item For more information and numerous examples, please refer to the project's \\underline{\\href{https://github.com/japiirainen/fp}{README.md}}."
         ]
     ]
 
@@ -85,7 +85,7 @@ vl =
             ( en "Shell scripting in \\texttt{TypeScript}."
             )
     , itemize
-        [ en "\\item \\texttt{vl} is a tool for writing shell scripts in \\texttt{TypeScript}. It is powered by \\underline{\\href{https://deno.land/}{deno}}."
+        [ en "\\item \\texttt{vl} is a tool for writing shell scripts in \\texttt{TypeScript}, powered by \\underline{\\href{https://deno.land/}{deno}}."
         ]
     ]
 
@@ -95,7 +95,7 @@ aoc =
     [ datedSection (github "japiirainen/aoc-2023") (bold "aoc") $
         paragraph $
           pure
-            ( en "Solutions to \\underline{\\href{https://adventofcode.com/}{Advent of Code}} problems in many programming languages."
+            ( en "Solutions to \\underline{\\href{https://adventofcode.com/}{Advent of Code}} problems implemented in various programming languages."
             )
     , itemize
         [ en $ "\\item " ++ year 2015 ++ ", " ++ year 2016 ++ ", " ++ year 2020 ++ ", " ++ year 2021 ++ ", " ++ year 2022 ++ ", " ++ year 2023 ++ "."
@@ -105,21 +105,20 @@ aoc =
     year ∷ Int → String
     year n = "\\underline{\\href{https://github.com/japiirainen/aoc-" ++ show n ++ "}{" ++ show n ++ "}}"
 
-compiler ∷ Resume
-compiler =
+domains ∷ Resume
+domains =
   paragraph
-    [ itemTeX "Compilers"
-    , en "Experience with parser generators, parser combinators and layout-sensitive syntax parsing."
-    , en "Familiar with multiple evaluation strategies such as normalization by evaluation (NBE) and abstract machines such as CEK and CESK machines."
+    [ itemTeX "Programming Domains"
+    , en "Experienced and passionate about programming domains such as algorithms, programming language development, web development, and computational methods in mathematics."
     ]
 
 programmingLanguages ∷ Resume
 programmingLanguages =
   paragraph
     [ itemTeX "Program Languages"
-    , en "\\textbf{multilingual} (not limited to any specific language),"
-    , en $ "especially experienced in " ++ very ++ ","
-    , en $ "comfortable with " ++ somehow ++ " (in random order)."
+    , en "\\textbf{Multilingual and adaptable},"
+    , en $ "extensive experienced in " ++ very ++ "."
+    , en $ "Comfortable working with " ++ somehow ++ " (in no particular order)."
     ]
   where
     somehow = "\\texttt{Rust}, \\texttt{C}, \\texttt{C++}, \\texttt{Java} and \\texttt{Ocaml}"
@@ -129,39 +128,37 @@ webFrameworks ∷ Resume
 webFrameworks =
   paragraph
     [ itemTeX "Web Technologies"
-    , en $ "Extensive experienced working with " ++ very ++ "."
+    , en $ "Extensive experienced with " ++ very ++ "."
     ]
   where
-    very = "\\texttt{React}, \\texttt{Next.js}, \\texttt{FastAPI}, \\texttt{dotnet}, \\texttt{Express.js}."
+    very = "\\texttt{React}, \\texttt{Next.js}, \\texttt{FastAPI}, \\texttt{Flask}, \\texttt{dotnet}, and \\texttt{node.js}"
 
 paradigms ∷ Resume
 paradigms =
   paragraph
     [ itemTeX "Programming Paradigms"
-    , en "Deep understanding of ins and outs of different programming paradigms, such as functional, object oriented, logic and array programming."
-    , en "Understand that different paradigms fit different problems, and that there are no silver bullets."
+    , en "In-depth understanding of various programming paradigms, including functional, object-oriented, logic, and array programming. Recognize that different paradigms are suited to different problems, and there are no universal solutions."
     ]
 
 practices ∷ Resume
 practices =
   paragraph
     [ itemTeX "Programming Practices"
-    , en "I value in high quality software and I always strive to find better ways to deliver it faster and more reliably.."
+    , en "Committed to delivering high-quality software with expertise in a range of testing and quality assurance techniques."
     ]
 
 cloud ∷ Resume
 cloud =
   paragraph
     [ itemTeX "Cloud Technologies"
-    , en "Extensive experience with clouds techologies such as \\texttt{Microsoft Azure} and \\texttt{AWS}."
-    , en "Experience with developing and maintaining infrastructure pipelines using the \\texttt{Infrastructure as Code} methodology."
+    , en "Extensive experience with cloud platforms such as Microsoft Azure and AWS. Skilled in developing and maintaining infrastructure pipelines using Infrastructure as Code (IaC) methodologies."
     ]
 
 wow ∷ Resume
 wow =
   paragraph
-    [ itemTeX "Ways Of Working"
-    , en "Love helping teams thrive and make projects succeed. Extensive experience of facilitating activities such as retros and project kickoffs."
+    [ itemTeX "Ways of Working"
+    , en "Passionate about helping teams thrive and achieve project success. Extensive experience facilitating activities such as retrospectives and project kickoffs."
     ]
 
 skills ∷ Resume
@@ -171,8 +168,8 @@ skills =
       [ wow
       , programmingLanguages
       , webFrameworks
-      , paradigms
       , cloud
+      , paradigms
       , practices
-      , compiler
+      , domains
       ]

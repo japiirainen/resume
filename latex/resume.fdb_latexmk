@@ -1,16 +1,16 @@
 # Fdb version 4
-["biber resume"] 1725466482.34672 "resume.bcf" "resume.bbl" "resume" 1725466485.26319 0
-  "resume.bcf" 1725466485.01081 106538 278e9f468116e638d79afaa53b6fc4a4 "xelatex"
+["biber resume"] 1725514214.78065 "resume.bcf" "resume.bbl" "resume" 1725514218.2977 0
+  "resume.bcf" 1725514218.01211 106538 278e9f468116e638d79afaa53b6fc4a4 "xelatex"
   (generated)
   "resume.bbl"
   "resume.blg"
   (rewritten before read)
-["xdvipdfmx"] 1725466485.05973 "resume.xdv" "resume.pdf" "resume" 1725466485.26444 0
-  "resume.xdv" 1725466485.01142 46096 2c0f8c14521670a0cfaa0325b54934e0 "xelatex"
+["xdvipdfmx"] 1725514218.06548 "resume.xdv" "resume.pdf" "resume" 1725514218.29908 0
+  "resume.xdv" 1725514218.01321 46720 b6b3b14a654514158ba9906f592e9abf "xelatex"
   (generated)
   "resume.pdf"
   (rewritten before read)
-["xelatex"] 1725466483.96399 "resume.tex" "resume.xdv" "resume" 1725466485.26324 0
+["xelatex"] 1725514216.88648 "resume.tex" "resume.xdv" "resume" 1725514218.29775 0
   "/nix/store/7x0nnzqwigg60kzivr2dm5293dwbb9ig-texlive-2023-env-texmfdist/fonts/map/fontname/texfonts.map" 1 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/nix/store/7x0nnzqwigg60kzivr2dm5293dwbb9ig-texlive-2023-env-texmfdist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/nix/store/7x0nnzqwigg60kzivr2dm5293dwbb9ig-texlive-2023-env-texmfdist/fonts/tfm/public/cm/cmmi12.tfm" 1 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -98,16 +98,16 @@
   "/nix/store/7x0nnzqwigg60kzivr2dm5293dwbb9ig-texlive-2023-env-texmfdist/tex/latex/xifthen/xifthen.sty" 1 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/nix/store/hnwcyypmkf8g07nwnp8wp2km1irji8sh-texlive-2023-env/share/texmf-var/web2c/texmf.cnf" 1 42643 e2c1f4de1bb13c11c89fbab95a58bb80 ""
   "/nix/store/hnwcyypmkf8g07nwnp8wp2km1irji8sh-texlive-2023-env/share/texmf-var/web2c/xetex/xelatex.fmt" 1 10851963 72741067c773535eb6c4c016087d8ca4 ""
-  "fontawesome.sty" 1725461748.77011 2806 6bd6af81c381b9022aed22ea3b6c5343 ""
-  "fontawesomesymbols-generic.tex" 1725461748.77052 33234 a3a3e12d9315f667a3e24bd6b3d6058b ""
-  "fontawesomesymbols-xeluatex.tex" 1725461748.77089 45782 7166bfdff927bad3f81e302543d76c90 ""
-  "linespacing_fix.sty" 1725461748.77114 928 d7b2ee806f776f17eb0e9f4ff455a31b ""
-  "resume.aux" 1725466485.00972 1721 d5787112e57a9e6d69d605665f6ec1b5 "xelatex"
-  "resume.bbl" 1725466482.84648 466 ee04f40f768daeed26442158e95aba61 "biber resume"
-  "resume.cls" 1725461748.77176 3073 b445b04046531d8fb2ec9464f6917d77 ""
-  "resume.out" 1725466485.01009 2085 952279a740c54558d583a4c929c792be "xelatex"
-  "resume.run.xml" 1725466485.01135 2347 96168638af93a1d944cc36e1abd43618 "xelatex"
-  "resume.tex" 1725466481.09628 5703 9f79c9c7b9802abcefb4e80d75381d77 ""
+  "fontawesome.sty" 1725512032.96968 2806 6bd6af81c381b9022aed22ea3b6c5343 ""
+  "fontawesomesymbols-generic.tex" 1725512032.96985 33234 a3a3e12d9315f667a3e24bd6b3d6058b ""
+  "fontawesomesymbols-xeluatex.tex" 1725512032.97 45782 7166bfdff927bad3f81e302543d76c90 ""
+  "linespacing_fix.sty" 1725512032.97008 928 d7b2ee806f776f17eb0e9f4ff455a31b ""
+  "resume.aux" 1725514218.01057 1747 f0ee6976261ebb178102036eb77d2c76 "xelatex"
+  "resume.bbl" 1725514215.43055 466 ee04f40f768daeed26442158e95aba61 "biber resume"
+  "resume.cls" 1725512032.97034 3073 b445b04046531d8fb2ec9464f6917d77 ""
+  "resume.out" 1725514218.01134 2163 34c05209c861fc6965284b22f157bca0 "xelatex"
+  "resume.run.xml" 1725514218.01313 2347 96168638af93a1d944cc36e1abd43618 "xelatex"
+  "resume.tex" 1725514213.1846 5777 67e0858657e8260b80482b6844df6972 ""
   (generated)
   "resume.aux"
   "resume.bcf"

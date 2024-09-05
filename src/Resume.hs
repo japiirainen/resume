@@ -32,9 +32,8 @@ resume =
     , section
         "Miscellaneous"
         [ itemize
-            [ en "\\item As a hobby I like to do rock climbing, solve programming puzzles and study mathematics. Lately I've been studying Algebraic Geometry and specifically it's computational aspects."
+            [ en "\\item As a hobby, I enjoy rock climbing, solving programming puzzles, and studying mathematics. Recently, I have been focusing on Algebraic Geometry and its computational aspects."
             ]
         ]
-    , -- end document
-      pure "\\end{document}"
+    , pure "\\end{document}"
     ]
