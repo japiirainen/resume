@@ -146,7 +146,7 @@ serverEngineering ∷ Resume
 serverEngineering =
   paragraph
     [ itemTeX "Server Engineering"
-    , en $ "Experience developing reliable, scalable and high throughput server-side systems with " ++ very ++ "."
+    , en $ "Experience developing reliable, scalable and high-throughput server-side systems with " ++ very ++ "."
     , en "Love developing fast and correct solutions to hard algorithmic problems."
     ]
   where
