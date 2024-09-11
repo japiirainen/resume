@@ -124,14 +124,33 @@ programmingLanguages =
     somehow = "\\texttt{Rust}, \\texttt{C}, \\texttt{C++}, \\texttt{Java} and \\texttt{Ocaml}"
     very = "\\texttt{TypeScript}, \\texttt{Clojure}, \\texttt{Haskell}, \\texttt{Python} and \\texttt{C\\#}"
 
-webFrameworks ∷ Resume
-webFrameworks =
+frontendDevelopment ∷ Resume
+frontendDevelopment =
   paragraph
-    [ itemTeX "Web Technologies"
-    , en $ "Extensive experienced with " ++ very ++ "."
+    [ itemTeX "Frontend Development"
+    , en $ "Expert in building beautiful and reliable client-side applications with " ++ very ++ "."
     ]
   where
-    very = "\\texttt{React}, \\texttt{Next.js}, \\texttt{FastAPI}, \\texttt{Flask}, \\texttt{dotnet}, and \\texttt{node.js}"
+    very = "\\texttt{React}, \\texttt{Next.js}, and \\texttt{Tailwind CSS}"
+
+mobileDevelopment ∷ Resume
+mobileDevelopment =
+  paragraph
+    [ itemTeX "Mobile Development"
+    , en $ "Experience building iOS mobile applications with " ++ very ++ "."
+    ]
+  where
+    very = "\\texttt{Swift}, \\texttt{SwiftUI}, and \\texttt{Core ML}"
+
+serverEngineering ∷ Resume
+serverEngineering =
+  paragraph
+    [ itemTeX "Server Engineering"
+    , en $ "Experience developing reliable, scalable and high throughput server-side systems with " ++ very ++ "."
+    , en "Love developing fast and correct solutions to hard algorithmic problems."
+    ]
+  where
+    very = "\\texttt{Clojure}, \\texttt{Python}, \\texttt{dotnet} and \\texttt{Java}"
 
 paradigms ∷ Resume
 paradigms =
@@ -158,7 +177,7 @@ wow ∷ Resume
 wow =
   paragraph
     [ itemTeX "Ways of Working"
-    , en "Passionate about helping teams thrive and achieve project success. Extensive experience facilitating activities such as retrospectives and project kickoffs."
+    , en "Passionate about helping teams thrive and achieve project success. Extensive experience facilitating activities such as retrospectives and project kickoffs. Extensive knowledge of agile methodologies."
     ]
 
 skills ∷ Resume
@@ -166,8 +185,10 @@ skills =
   section "Skills" . pure $
     itemize
       [ wow
+      , serverEngineering
+      , frontendDevelopment
+      , mobileDevelopment
       , programmingLanguages
-      , webFrameworks
       , cloud
       , paradigms
       , practices
