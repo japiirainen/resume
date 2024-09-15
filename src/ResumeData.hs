@@ -121,8 +121,8 @@ programmingLanguages =
     , en $ "Comfortable working with " ++ somehow ++ " (in no particular order)."
     ]
   where
-    somehow = "\\texttt{Rust}, \\texttt{C}, \\texttt{C++}, \\texttt{Java} and \\texttt{Ocaml}"
-    very = "\\texttt{TypeScript}, \\texttt{Clojure}, \\texttt{Haskell}, \\texttt{Python} and \\texttt{C\\#}"
+    somehow = "\\texttt{Rust}, \\texttt{C}, \\texttt{C++}, and \\texttt{Ocaml}"
+    very = "\\texttt{Kotlin}, \\texttt{TypeScript}, \\texttt{Clojure}, \\texttt{Haskell}, \\texttt{Python}, \\texttt{Java}, and \\texttt{C\\#}"
 
 frontendDevelopment ∷ Resume
 frontendDevelopment =
