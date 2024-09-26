@@ -150,7 +150,7 @@ serverEngineering =
     , en "Love developing fast and correct solutions to hard algorithmic problems."
     ]
   where
-    very = "\\texttt{Clojure}, \\texttt{Python}, \\texttt{dotnet} and \\texttt{Java}"
+    very = "\\texttt{Clojure}, \\texttt{Python}, \\texttt{dotnet}, \\texttt{Node.js}, and \\texttt{Java}"
 
 paradigms ∷ Resume
 paradigms =
